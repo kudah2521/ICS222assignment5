@@ -1,0 +1,25 @@
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    
+}
+
+
+table{
+    align-self: auto;
+    text-align: left;
+    margin: auto;
+    border: 1px solid rgb(220, 241, 144);
+    margin-top: 18px;
+}
+
+
+button{
+    margin: auto;
+    margin-top: 6px;
+    font-size: 1.5em;
+    color: black;
+    background: rgb(90, 4, 61);
+}

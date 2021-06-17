@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet1.css">
+    <title>ASSIGNMENT FIVE</title>
+</head>
+<body>
+    <div>
+        <h3>Table 1 </h3>
+        <table id="tabledata" border= "1">
+    
+            <thead>
+                    <tr>
+                            <th>Name</th>
+                            <th>Bounces</th>
+                    </tr>
+            </thead>
+           <tbody id="tablebody" >
+                   <tr>
+                        <td>Tendai</td>
+                        <td>7</td>
+                    </tr>
+                    <tr >
+                        <td>Kudzai</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>Taurai</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Nyika</td>
+                        <td>1000</td>
+                    </tr>
+           </tbody>
+        </table>
+       
+
+
+        <br>
+        <h3>Table 2 </h3>
+        <table id="tabledata" border= "1">
+    
+            <thead>
+                    <tr>
+                            <th>Name</th>
+                            <th>Favourite Dish</th>
+                    </tr>
+            </thead>
+           <tbody id="tablebody" >
+                   <tr>
+                        <td>Tendai</td>
+                        <td>Sadza Madora</td>
+                    </tr>
+                    <tr >
+                        <td>Kudzai</td>
+                        <td>Sadza Chicken</td>
+                    </tr>
+                    <tr>
+                        <td>Taurai</td>
+                        <td>Gango</td>
+                    </tr>
+                
+           </tbody>
+        </table>
+        <div class="row">
+                <button id="zebra"> CLICK</button>
+        </div>
+    </div>
+    </div>
+
+
+    <script>
+        let button = document.getElementById("zebra");
+       
+        button.addEventListener('click', ()=>{
+            var table_data = document.getElementsByTagName("table");
+            let number_of_tables = table_data.length; 
+           
+            let table_index = 0;
+            while(table_index < number_of_tables){
+                let table = table_data[table_index].getElementsByTagName('tr'); 
+                let row_count = 0;
+                for(row_count =0; row_count< table.length; row_count+=2){
+                    table[row_count].style.background = "black";
+                    table[row_count].style.color= "white";
+                }
+               
+                table_index++;
+            }
+
+
+           
+        });
+       
+       
+        
+        
+
+     
+    </script>
+</body>
+</html>
